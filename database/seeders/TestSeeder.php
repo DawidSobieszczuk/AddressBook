@@ -2,15 +2,15 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Address;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class TestSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
@@ -38,7 +38,9 @@ class DatabaseSeeder extends Seeder
 
         Address::factory()->count(10)->create(['user_id' => 1]);
         Address::factory()->count(5)->create(['user_id' => 2]);
-        Address::factory()->count(5)->create(['user_id' => 3]);
+        Address::factory()->count(4)->create(['user_id' => 3]);
 
+        Address::factory()->count(1)->create(['user_id' => 3, 'city' => 'abc']);
+        
     }
 }
