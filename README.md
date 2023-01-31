@@ -43,6 +43,8 @@ W bazie zostaną utworzone przykładowe adresy i trzech użytkowników. Jeden z 
 php artisan migrate --seed
 ```
 
+Dane do logowania
+
 ```
 username: admin
 password: password
